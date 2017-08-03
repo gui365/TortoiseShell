@@ -1,0 +1,286 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+/* Header section */
+
+#alternative-menu {
+  display: none;
+}
+
+.header-banner {
+  background-image: url(../images/glasses-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 31rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo-wht {
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem;
+}
+
+.header-navigation {
+  width: 960px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 1rem 0;
+}
+
+.header-navigation-logo {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav span {
+  margin: 0 2rem 0 0;
+}
+
+#motto {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.header-motto {
+  width: 960px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-motto-box {
+  background-color: white;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  position: relative;
+  right: -2rem;
+}
+
+/* Main section */
+.main {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main-plus {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-plus-exams,
+.main-plus-fittings,
+.main-plus-delivery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 8rem;
+  width: 5rem;
+  padding: 3rem 3rem;
+  align-items: flex-start;
+}
+
+p {
+  color: black;
+}
+
+.about-text {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  text-align: left;
+  width: 10rem;
+}
+
+.main-about {
+  display: flex;
+  justify-content: center;
+}
+
+.main-about-philosophy,
+.main-about-appointments {
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.about-text-p {
+  margin-top: 1rem;
+}
+
+.main-about-philosophy {
+  padding-right: 2.5%;
+}
+
+.main-about-appointments {
+  padding-left: 2.5%;
+}
+
+/* Footer */
+.footer {
+  background-color: azure;
+  width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+#logo-bck {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 740px) {
+  .header-navigation {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-banner {
+    height: 22rem;
+    background-size: cover;
+  }
+
+  .header-motto-box {
+  background-color: white;
+  margin-top: 5rem;
+  padding: 0.75rem 4rem;
+  position: relative;
+  right: 2rem;
+  }
+
+  .header-motto {
+  width: 100%;
+  }
+
+#motto {
+  font-size: 1.33rem;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+#alternative-menu {
+  display: flex;
+}
+
+#navigation-menu {
+  display: none;
+}
+
+.header-navigation-logo span {
+  display: none;
+}
+
+.header-banner {
+  height: 17rem;
+  background-size: cover;
+}
+
+.header-motto-box {
+  background-color: white;
+  margin-top: 9rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  right: 0;
+}
+
+.header-motto {
+  width: 100%;
+  display: flex;
+}
+
+.main-plus {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted red;
+  align-items: center;
+}
+
+.main-plus-exams,
+.main-plus-fittings,
+.main-plus-delivery {
+  border: 1px dotted yellow;
+  width: 35%;
+}
+
+.main-plus-exams {
+  margin-top: 3.77rem;
+  padding: 0;
+}
+
+.main-plus-fittings {
+  margin-top: 1.54rem;
+  margin-bottom: 1.54rem;
+  padding: 0;
+}
+
+.main-plus-delivery {
+  margin-bottom: 3.77rem;
+  padding: 0;
+}
+
+.main-about-philosophy,
+.main-about-appointments {
+  width: 100%;
+  border: 1px dotted blue;
+  padding: 0;
+}
+
+.main-about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text-p {
+  margin-top: 1rem;
+  font-size: 0.77rem;
+}
+
+.about-text {
+  width: 100%;
+  border: 1px dotted blue;
+  text-align: center;
+}
+
+#copyright {
+  display: none;
+}
+
+.footer {
+  justify-content: center;
+}
+
+#logo-bck {
+  margin: 4rem 0;
+}
+
+}
